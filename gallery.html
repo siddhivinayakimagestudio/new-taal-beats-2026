@@ -77,9 +77,9 @@ const scenes=[
 ['#3e50b5','#ec4d99'],['#8a3299','#ffb52e'],['#d44b27','#f3d66b'],['#1a8b86','#e83d84'],['#6b2fb7','#ffba39']
 ];
 function dancerSVG(a,b,variant){
-const photo='https://images.unsplash.com/photo-1774437897284-b2f7c4638c55?auto=format&fit=crop&fm=jpg&q=80&w=700';
-const positions=['50% 35%','35% 45%','60% 35%','45% 50%','55% 40%','40% 35%','65% 45%','50% 55%','30% 40%','70% 40%'];
-return '<img src="'+photo+'" alt="Illustrative real-life Indian festival dancers in colorful traditional clothing" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;object-position:'+positions[variant]+';border-radius:9px">';
+const x=[0,25,50,75,100][variant%5];
+const y=variant<5?0:100;
+return '<div role="img" aria-label="Garba Dandiya dancers" style="display:block;width:100%;height:100%;border-radius:9px;background-image:url(\'assets/garba-sheet.jpg\');background-size:500% 200%;background-position:'+x+'% '+y+'%;background-repeat:no-repeat"></div>';
 }
 document.getElementById('days').innerHTML=links.map((url,i)=>'<a class="day" href="'+url+'" target="_blank" rel="noopener noreferrer" aria-label="Open Day '+String(i+1).padStart(2,'0')+' photo folder"><div class="daynum">DAY '+String(i+1).padStart(2,'0')+'</div><div class="name">'+names[i]+'</div><div class="dance">'+dancerSVG(scenes[i][0],scenes[i][1],i)+'</div><div class="open">VIEW PHOTOS ↗</div></a>').join('');
 </script>
