@@ -8,8 +8,8 @@
 :root{--gold:#ffd66a;--pink:#ff3d8b;--bg:#100715;--panel:#1c0d21}
 *{box-sizing:border-box}
 body{margin:0;background:radial-gradient(ellipse at top,#50104e 0,#17091d 43%,#08060b 100%);color:#fff;font-family:Arial,Helvetica,sans-serif}
-.page{width:min(1180px,100%);margin:auto;padding:14px}
-.hero{position:relative;overflow:hidden;text-align:center;padding:24px 16px 20px;border:1px solid #d49a35;border-radius:20px;background:linear-gradient(120deg,#260a2eeb,#100713f2);box-shadow:0 0 28px #ffb52e35,inset 0 0 30px #ffcc4b12;display:grid;grid-template-columns:minmax(105px,1fr) minmax(0,2.4fr) minmax(105px,1fr);align-items:center;gap:12px}
+.page{width:min(100%,1600px);margin:auto;padding:10px}
+.hero{position:relative;overflow:hidden;text-align:center;padding:10px 14px 9px;border:1px solid #d49a35;border-radius:9px;background:radial-gradient(ellipse at center,#260a2eeb,#100713f7 70%);box-shadow:0 0 20px #ffb52e35,inset 0 0 30px #ffcc4b12;display:grid;grid-template-columns:minmax(100px,1fr) minmax(0,2.6fr) minmax(100px,1fr);align-items:center;gap:8px}
 .hero:before{content:"";display:none}.hero-center{min-width:0}.logo-circle{width:clamp(92px,16vw,180px);aspect-ratio:1;border-radius:50%;margin:auto;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;border:5px solid #f7d78a;outline:2px solid #d99a28;box-shadow:0 0 20px #ffca58aa,inset 0 0 20px #ffca5844;background:radial-gradient(circle,#bd0750 0,#68052f 65%,#260a2e 100%);color:#ffe18a;font-weight:900;text-shadow:0 2px 4px #240414}.logo-circle.taal{font-family:Georgia,serif;font-size:clamp(12px,2vw,22px);line-height:1.05}.logo-circle.pawar{background:radial-gradient(circle,#38143c 0,#100713 70%);font-size:clamp(12px,1.7vw,20px);line-height:1.1;color:#fff}.logo-circle.pawar span{color:#ffce60}
 .event{font-size:clamp(10px,2vw,14px);font-weight:800;letter-spacing:2px;color:#ffcb62}
 h1{margin:8px 0 0;font-size:clamp(31px,7vw,68px);font-weight:1000;line-height:.98;letter-spacing:-1px;color:#fff3bf;text-shadow:0 3px 0 #a75b08,0 6px 0 #532313,0 0 24px #ffb82e}
@@ -25,14 +25,14 @@ h1{margin:8px 0 0;font-size:clamp(31px,7vw,68px);font-weight:1000;line-height:.9
 .titlebar:after{transform:scaleX(-1)}
 .titlebar h2{margin:0;font-size:clamp(20px,4vw,30px);color:#ffdb77;text-shadow:0 0 12px #ff9c25;white-space:nowrap}
 .intro{text-align:center;color:#e8d6ed;font-size:13px;margin:0 0 17px}
-.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
-.day{display:flex;flex-direction:column;min-width:0;text-decoration:none;color:#fff;background:linear-gradient(145deg,#30102b,#120b17);border:1px solid #e8a93d;border-radius:14px;padding:9px;box-shadow:0 0 12px #ffac352b,inset 0 0 14px #ffb9380c;transition:transform .16s,border-color .16s}
+.grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.day{display:flex;flex-direction:column;min-width:0;text-decoration:none;color:#fff;background:linear-gradient(145deg,#160816,#08050b);border:1px solid #d99b2b;border-radius:8px;padding:5px;box-shadow:0 0 9px #ffac352b,inset 0 0 14px #ffb9380c;transition:transform .16s,border-color .16s}
 .day:hover{border-color:#fff0a0;box-shadow:0 0 18px #ffb73565;transform:translateY(-2px)}
 .daynum{color:#ffdf7d;font-weight:1000;font-size:clamp(12px,1.8vw,18px);letter-spacing:.4px}
-.name{font-size:11px;color:#eadbea;min-height:25px;padding-top:3px}
-.dance{height:105px;border-radius:9px;margin:5px 0 8px;display:block;width:100%;overflow:hidden;background:#281027}
-.dance svg{display:block;width:100%;height:100%}
-.open{margin-top:auto;border-radius:99px;text-align:center;padding:8px 3px;background:linear-gradient(90deg,#ffcc56,#fff0a1,#f9a92b);color:#271021;font-size:10px;font-weight:1000;letter-spacing:.3px}
+.name{font-size:9px;color:#eadbea;min-height:16px;padding-top:2px}
+.dance{height:clamp(65px,8vw,100px);border-radius:7px;margin:3px 0 5px;display:block;width:100%;overflow:hidden;background:#281027}
+.dance svg{display:block;width:100%;height:100%}.dance.photo{background-image:url("https://siddhivinayakimagestudio.github.io/new-taal-beats-2026/assets/garba-sheet.jpg");background-size:500% 200%;background-repeat:no-repeat}
+.open{margin-top:auto;border-radius:99px;text-align:center;padding:6px 2px;background:linear-gradient(90deg,#ffcc56,#fff0a1,#f9a92b);color:#271021;font-size:8px;font-weight:1000;letter-spacing:.1px}
 .follow{margin:22px 0 0;padding:16px;border:1px solid #bd8d37;border-radius:16px;background:linear-gradient(120deg,#211027,#120914);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .follow-copy strong{display:block;color:#ffdc76;font-size:16px}.follow-copy small{display:block;color:#d8c7db;margin-top:4px}
 .social{display:flex;gap:8px;flex-wrap:wrap}.social a{padding:11px 14px;border-radius:9px;text-decoration:none;color:#fff;font-size:12px;font-weight:800;background:linear-gradient(100deg,#9234ba,#f04475,#f59b36)}.social a.yt{background:#df1d2f}
@@ -43,11 +43,13 @@ footer{text-align:center;padding:18px 8px 8px;color:#bba8bf;font-size:10px;lette
 </head>
 <body><script>if(localStorage.getItem("pawarGalleryFollowConfirmed")!=="yes"){window.location.replace("https://siddhivinayakimagestudio.github.io/new-taal-beats-2026/bio.html");}</script><main class="page">
 <header class="hero">
-<div class="event">PALGHAR • DANDIYA &amp; GARBA FESTIVAL</div>
+<div class="logo-circle taal" aria-label="New Taal Beats logo">💃🕺<br><strong>New Taal</strong><br><span>Beats</span><br><small>PALGHAR</small></div>
+<div class="hero-center"><div class="event">✦ PALGHAR • DANDIYA &amp; GARBA FESTIVAL ✦</div>
 <h1>NEW TAAL BEATS</h1><div class="year">2026</div>
 <div class="subtitle">✦ OFFICIAL PHOTO GALLERY ✦</div>
 <div class="brandline"><div class="aperture">✺</div><div class="brandmark">PAWAR <span>IMAGE STUDIO</span></div></div>
-<div class="contact">OFFICIAL PHOTOGRAPHY PARTNER<br>Professional Photography • Event Memories<br>☎ 93212 69956 • Navali, Palghar, Maharashtra</div>
+<div class="contact">OFFICIAL PHOTOGRAPHY PARTNER<br>Professional Photography • Event Memories<br>☎ 93212 69956 • Navali, Palghar, Maharashtra</div></div>
+<div class="logo-circle pawar" aria-label="Pawar Image Studio logo">PAWAR<br><span>IMAGE STUDIO</span></div>
 </header>
 <div class="titlebar"><h2>PHOTO GALLERY</h2></div>
 <p class="intro">तुमचा दिवस निवडा • त्या दिवसाचे फोटो पाहा आणि Google Drive मधून डाउनलोड करा.</p>
@@ -80,6 +82,6 @@ function dancerSVG(a,b,variant){
 const c=['#ffcc44','#f52e7a','#7a39d2','#13a9a1','#ff6b35','#3158d4','#ed3c9c','#f2a62b','#12a59a','#b43ed1'][variant%10];
 return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 150" role="img" aria-label="Cartoon Garba Dandiya dancers" style="display:block;width:100%;height:100%;border-radius:9px;background:radial-gradient(ellipse at 50% 35%,'+b+' 0%,'+a+' 65%,#18091b 100%)"><defs><linearGradient id="sk'+variant+'" x1="0" y1="0" x2="1" y2="1"><stop stop-color="'+b+'"/><stop offset="1" stop-color="'+c+'"/></linearGradient></defs><g opacity=".45" fill="#fff2b5"><circle cx="24" cy="23" r="3"/><circle cx="290" cy="32" r="4"/><circle cx="48" cy="93" r="2"/><circle cx="273" cy="110" r="3"/><circle cx="165" cy="15" r="2"/><circle cx="138" cy="126" r="2"/></g><g stroke="#fff0c4" stroke-width="3" stroke-linecap="round"><path d="M28 18l37 25M288 17l-37 25M52 8l20 14M268 8l-20 14"/></g><g transform="translate(92 28)"><circle cx="0" cy="11" r="12" fill="#f3bd8d" stroke="#562140" stroke-width="2"/><path d="M-13 9q-7-19 10-20q17 2 15 20l-7-8-12 0z" fill="#241129"/><path d="M-10 26L-23 63L-10 83L10 83L23 63L10 26Z" fill="url(#sk'+variant+')" stroke="#ffe7a1" stroke-width="2"/><path d="M-9 32L-29 49M9 32L30 12" stroke="#f3bd8d" stroke-width="8" stroke-linecap="round"/><path d="M-9 82l-8 25M9 82l9 25" stroke="#f3bd8d" stroke-width="8" stroke-linecap="round"/><path d="M-31 49L-2 8" stroke="#ffe7a1" stroke-width="4" stroke-linecap="round"/><path d="M-18 43L-7 29M-13 36L-3 25" stroke="#fff" stroke-width="1.5"/></g><g transform="translate(226 28) scale(-1 1)"><circle cx="0" cy="11" r="12" fill="#f3bd8d" stroke="#562140" stroke-width="2"/><path d="M-13 9q-8-18 9-20q17 2 16 20l-7-8-12 0z" fill="#241129"/><path d="M-10 26L-23 63L-10 83L10 83L23 63L10 26Z" fill="url(#sk'+variant+')" stroke="#ffe7a1" stroke-width="2"/><path d="M-10 32L-30 12M10 32L29 48" stroke="#f3bd8d" stroke-width="8" stroke-linecap="round"/><path d="M-9 82l-8 25M9 82l9 25" stroke="#f3bd8d" stroke-width="8" stroke-linecap="round"/><path d="M-31 12L-2 49" stroke="#ffe7a1" stroke-width="4" stroke-linecap="round"/></g><text x="160" y="141" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#fff3d0" letter-spacing="2">GARBA • DANDIYA</text></svg>';
 }
-document.getElementById('days').innerHTML=links.map((url,i)=>'<a class="day" href="'+url+'" target="_blank" rel="noopener noreferrer" aria-label="Open Day '+String(i+1).padStart(2,'0')+' photo folder"><div class="daynum">DAY '+String(i+1).padStart(2,'0')+'</div><div class="name">'+names[i]+'</div><div class="dance">'+dancerSVG(scenes[i][0],scenes[i][1],i)+'</div><div class="open">VIEW PHOTOS ↗</div></a>').join('');
+document.getElementById('days').innerHTML=links.map((url,i)=>'<a class="day" href="'+url+'" target="_blank" rel="noopener noreferrer" aria-label="Open Day '+String(i+1).padStart(2,'0')+' photo folder"><div class="daynum">DAY '+String(i+1).padStart(2,'0')+'</div><div class="name">'+names[i]+'</div><div class="dance photo" style="background-position:'+([0,25,50,75,100][i%5])+'% '+(i<5?'0%':'100%')+'"></div><div class="open">VIEW PHOTOS ↗</div></a>').join('');
 </script>
 </body></html>
