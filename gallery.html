@@ -9,8 +9,8 @@
 *{box-sizing:border-box}
 body{margin:0;background:radial-gradient(ellipse at top,#50104e 0,#17091d 43%,#08060b 100%);color:#fff;font-family:Arial,Helvetica,sans-serif}
 .page{width:min(1180px,100%);margin:auto;padding:14px}
-.hero{position:relative;overflow:hidden;text-align:center;padding:24px 16px 20px;border:1px solid #d49a35;border-radius:20px;background:linear-gradient(120deg,#260a2eeb,#100713f2);box-shadow:0 0 28px #ffb52e35,inset 0 0 30px #ffcc4b12}
-.hero:before{content:"✦ ✧ ✦ ✧ ✦ ✧ ✦";display:block;color:#ffce63;letter-spacing:10px;font-size:13px;margin-bottom:8px}
+.hero{position:relative;overflow:hidden;text-align:center;padding:24px 16px 20px;border:1px solid #d49a35;border-radius:20px;background:linear-gradient(120deg,#260a2eeb,#100713f2);box-shadow:0 0 28px #ffb52e35,inset 0 0 30px #ffcc4b12;display:grid;grid-template-columns:minmax(105px,1fr) minmax(0,2.4fr) minmax(105px,1fr);align-items:center;gap:12px}
+.hero:before{content:"";display:none}.hero-center{min-width:0}.logo-circle{width:clamp(92px,16vw,180px);aspect-ratio:1;border-radius:50%;margin:auto;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;border:5px solid #f7d78a;outline:2px solid #d99a28;box-shadow:0 0 20px #ffca58aa,inset 0 0 20px #ffca5844;background:radial-gradient(circle,#bd0750 0,#68052f 65%,#260a2e 100%);color:#ffe18a;font-weight:900;text-shadow:0 2px 4px #240414}.logo-circle.taal{font-family:Georgia,serif;font-size:clamp(12px,2vw,22px);line-height:1.05}.logo-circle.pawar{background:radial-gradient(circle,#38143c 0,#100713 70%);font-size:clamp(12px,1.7vw,20px);line-height:1.1;color:#fff}.logo-circle.pawar span{color:#ffce60}
 .event{font-size:clamp(10px,2vw,14px);font-weight:800;letter-spacing:2px;color:#ffcb62}
 h1{margin:8px 0 0;font-size:clamp(31px,7vw,68px);font-weight:1000;line-height:.98;letter-spacing:-1px;color:#fff3bf;text-shadow:0 3px 0 #a75b08,0 6px 0 #532313,0 0 24px #ffb82e}
 .year{font-size:clamp(30px,5vw,48px);font-weight:1000;color:#fff;text-shadow:0 0 15px #ffbd36}
@@ -37,7 +37,7 @@ h1{margin:8px 0 0;font-size:clamp(31px,7vw,68px);font-weight:1000;line-height:.9
 .follow-copy strong{display:block;color:#ffdc76;font-size:16px}.follow-copy small{display:block;color:#d8c7db;margin-top:4px}
 .social{display:flex;gap:8px;flex-wrap:wrap}.social a{padding:11px 14px;border-radius:9px;text-decoration:none;color:#fff;font-size:12px;font-weight:800;background:linear-gradient(100deg,#9234ba,#f04475,#f59b36)}.social a.yt{background:#df1d2f}
 footer{text-align:center;padding:18px 8px 8px;color:#bba8bf;font-size:10px;letter-spacing:1px}
-@media(max-width:760px){.page{padding:9px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.hero{padding:22px 10px 17px}.dance{height:116px}.day{padding:9px}.name{font-size:12px;min-height:23px}.open{font-size:11px;padding:9px 4px}.follow{justify-content:center;text-align:center}.social{justify-content:center;width:100%}}
+@media(max-width:760px){.page{padding:9px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.hero{padding:18px 9px 15px;grid-template-columns:76px minmax(0,1fr) 76px;gap:5px}.logo-circle{width:72px;border-width:3px;padding:4px}.logo-circle.taal{font-size:10px}.logo-circle.pawar{font-size:10px}.event{letter-spacing:1px}.dance{height:116px}.day{padding:9px}.name{font-size:12px;min-height:23px}.open{font-size:11px;padding:9px 4px}.follow{justify-content:center;text-align:center}.social{justify-content:center;width:100%}}
 @media(max-width:360px){.grid{gap:7px}.day{padding:7px}.dance{height:94px}.brandmark{letter-spacing:0}}
 </style>
 </head>
